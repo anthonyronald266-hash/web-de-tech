@@ -1,281 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnovaTech - Instituto Superior</title>
-    
-    <!-- Framework Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Iconos de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <!-- Hoja de Estilos Personalizada -->
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaTech | Instituto Superior</title>
+  
+  <!-- Framework CSS Externo (Bootstrap 5) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Íconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Hoja de Estilos Personalizada -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- BARRA DE NAVEGACIÓN -->
-    <header class="navbar-header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark container py-2">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="img/Senati-1.jpg" alt="InnovaTech" height="34" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/2997/2997295.png';">
-                <div class="d-flex flex-column lh-1">
-                    <span class="fw-bold fs-5 brand-title">InnovaTech</span>
-                    <small class="text-white-50 style-sub brand-sub">Instituto Superior</small>
-                </div>
-            </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 pt-3 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a href="#registro" class="btn btn-green fw-semibold px-4 rounded-3 w-100 w-lg-auto">Regístrate</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- HERO BANNER -->
-        <section id="inicio" class="hero-section position-relative overflow-hidden">
-            <div class="container position-relative z-1 py-4 py-lg-5">
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-6 text-center text-lg-start">
-                        <h1 class="hero-title fw-bold text-navy mb-3">
-                            Forma tu futuro<br>
-                            <span>con educación de calidad</span>
-                        </h1>
-                        <p class="hero-subtitle text-secondary mb-4 mx-auto mx-lg-0">
-                            Programas técnicos superiores diseñados para impulsar tu desarrollo profesional y personal.
-                        </p>
-                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-2 gap-sm-3 hero-buttons">
-                            <a href="#programas" class="btn btn-blue btn-lg fs-6 fw-semibold px-4 py-2">Conoce nuestros programas</a>
-                            <a href="#contacto" class="btn btn-outline-custom btn-lg fs-6 fw-semibold px-4 py-2">Contáctanos</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-center text-lg-end d-none d-lg-block">
-                        <div class="hero-img-wrapper">
-                            <img src="img/Senati-1.jpg" alt="Estudiantes InnovaTech" class="hero-img img-fluid" style="border-radius: 12px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN PRINCIPAL -->
-        <section class="py-5 bg-white">
-            <div class="container">
-                <div class="row g-4">
-                    
-                    <!-- COLUMNA IZQUIERDA (BENEFICIOS + PROGRAMAS) -->
-                    <div class="col-lg-8">
-                        <div id="beneficios" class="mb-5">
-                            <h3 class="text-center fw-bold mb-4 section-title">¿Por qué estudiar con nosotros?</h3>
-                            <div class="row g-3">
-                                <div class="col-12 col-md-3">
-                                    <div class="beneficio-card p-2">
-                                        <div class="icon-circle bg-blue-subtle text-primary flex-shrink-0">
-                                            <i class="bi bi-mortarboard-fill"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold fs-7 mb-1">Educación de calidad</h6>
-                                            <p class="text-muted text-xs mb-0">Docentes especializados y programas actualizados.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="beneficio-card p-2">
-                                        <div class="icon-circle bg-green-subtle text-success flex-shrink-0">
-                                            <i class="bi bi-briefcase-fill"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold fs-7 mb-1">Oportunidades reales</h6>
-                                            <p class="text-muted text-xs mb-0">Convenios con empresas y bolsa de trabajo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="beneficio-card p-2">
-                                        <div class="icon-circle bg-warning-subtle text-warning flex-shrink-0">
-                                            <i class="bi bi-display-fill"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold fs-7 mb-1">Modalidad flexible</h6>
-                                            <p class="text-muted text-xs mb-0">Estudia a tu ritmo con nuestros horarios flexibles.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <div class="beneficio-card p-2">
-                                        <div class="icon-circle bg-purple-subtle text-purple flex-shrink-0">
-                                            <i class="bi bi-people-fill"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold fs-7 mb-1">Acompañamiento</h6>
-                                            <p class="text-muted text-xs mb-0">Te apoyamos en cada paso de tu formación.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SECCIÓN PROGRAMAS -->
-                        <div id="programas">
-                            <h3 class="text-center fw-bold mb-4 section-title">Nuestros Programas</h3>
-                            <div class="row g-3" id="contenedor-programas">
-                                <!-- Tarjetas locales base -->
-                                <div class="col-md-4">
-                                    <div class="card border rounded-3 h-100 shadow-sm program-card">
-                                        <img src="img/Captura1.PNG" class="card-img-top" alt="Desarrollo de Software" style="height: 200px; object-fit: cover;">
-                                        <div class="card-body p-3 d-flex flex-column">
-                                            <h6 class="card-title fw-bold">Desarrollo de Software</h6>
-                                            <p class="card-text text-muted text-xs flex-grow-1">Aprende a crear soluciones de software modernas y eficientes.</p>
-                                            <a href="#registro" class="btn btn-blue btn-sm w-100 mt-2">Más información</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border rounded-3 h-100 shadow-sm program-card">
-                                        <img src="img/Captura2.PNG" class="card-img-top" alt="Administración de Empresas" style="height: 200px; object-fit: cover;">
-                                        <div class="card-body p-3 d-flex flex-column">
-                                            <h6 class="card-title fw-bold">Administración de Empresas</h6>
-                                            <p class="card-text text-muted text-xs flex-grow-1">Lidera organizaciones con visión estratégica e innovadora.</p>
-                                            <a href="#registro" class="btn btn-blue btn-sm w-100 mt-2">Más información</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border rounded-3 h-100 shadow-sm program-card">
-                                        <img src="img/Captura3.PNG" class="card-img-top" alt="Redes y Telecomunicaciones" style="height: 200px; object-fit: cover;">
-                                        <div class="card-body p-3 d-flex flex-column">
-                                            <h6 class="card-title fw-bold">Redes y Telecomunicaciones</h6>
-                                            <p class="card-text text-muted text-xs flex-grow-1">Conéctate con el mundo a través de tecnologías modernas.</p>
-                                            <a href="#registro" class="btn btn-blue btn-sm w-100 mt-2">Más información</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- COLUMNA DERECHA (FORMULARIO REGISTRO) -->
-                    <div class="col-lg-4" id="registro">
-                        <div class="form-card-sidebar p-4 rounded-4">
-                            <h4 class="fw-bold mb-1 text-navy">Regístrate ahora</h4>
-                            <p class="text-muted text-xs mb-3">Déjanos tus datos para procesar tu matrícula o información.</p>
-
-                            <form id="formRegistro">
-                                <div class="mb-2">
-                                    <label for="nombre" class="form-label text-xs fw-semibold mb-1">Nombre completo</label>
-                                    <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Ej. Juan Pérez" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="correo" class="form-label text-xs fw-semibold mb-1">Correo electrónico</label>
-                                    <input type="email" class="form-control form-control-sm" id="correo" placeholder="Ej. correo@ejemplo.com" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="clave" class="form-label text-xs fw-semibold mb-1">Contraseña</label>
-                                    <input type="password" class="form-control form-control-sm" id="clave" placeholder="••••••••" required>
-                                </div>
-                                <div class="row g-2 mb-2">
-                                    <div class="col-6">
-                                        <label for="fecha" class="form-label text-xs fw-semibold mb-1">Fecha</label>
-                                        <input type="date" class="form-control form-control-sm" id="fecha" required>
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="genero" class="form-label text-xs fw-semibold mb-1">Género</label>
-                                        <select class="form-select form-select-sm" id="genero" required>
-                                            <option value="" disabled selected>Selecciona</option>
-                                            <option value="Masculino">Masculino</option>
-                                            <option value="Femenino">Femenino</option>
-                                            <option value="Otro">Otro</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="carrera" class="form-label text-xs fw-semibold mb-1">Carrera</label>
-                                    <select class="form-select form-select-sm" id="carrera" required>
-                                        <option value="" disabled selected>Cargando carreras...</option>
-                                    </select>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="foto" class="form-label text-xs fw-semibold mb-1">Fotografía del Estudiante</label>
-                                    <input type="file" class="form-control form-control-sm" id="foto" accept="image/*" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="comentario" class="form-label text-xs fw-semibold mb-1">Comentario</label>
-                                    <textarea class="form-control form-control-sm" id="comentario" rows="2" placeholder="Opcional..."></textarea>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="acepto" required>
-                                    <label class="form-check-label text-xs text-muted" for="acepto">
-                                        Acepto los <a href="#" class="text-decoration-none">términos y condiciones</a>
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-green w-100 py-2 fw-semibold" id="btnEnviar">Enviar registro</button>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer id="contacto" class="footer-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4 mb-4 text-xs">
-                <div class="col-md-3">
-                    <div class="d-flex align-items-center gap-2 mb-2">
-                        <img src="img/Senati-1.jpg" alt="InnovaTech" height="30" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/2997/2997295.png';">
-                        <div class="lh-1">
-                            <span class="fw-bold fs-6">InnovaTech</span><br>
-                            <small class="text-white-50 style-sub">Instituto Superior</small>
-                        </div>
-                    </div>
-                    <p class="text-white-50 mb-3">Formamos profesionales técnicos capaces de transformar su entorno.</p>
-                </div>
-                <div class="col-md-3 ps-md-4">
-                    <h6 class="fw-bold mb-3 text-white fs-7">Enlaces rápidos</h6>
-                    <ul class="list-unstyled d-flex flex-column gap-1 text-white-50">
-                        <li><a href="#inicio" class="text-white-50 text-decoration-none">Inicio</a></li>
-                        <li><a href="#programas" class="text-white-50 text-decoration-none">Programas</a></li>
-                        <li><a href="#beneficios" class="text-white-50 text-decoration-none">Beneficios</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6 class="fw-bold mb-3 text-white fs-7">Contáctanos</h6>
-                    <ul class="list-unstyled d-flex flex-column gap-2 text-white-50">
-                        <li><i class="bi bi-geo-alt me-2 text-primary"></i> Av. Principal 123</li>
-                        <li><i class="bi bi-envelope me-2 text-primary"></i> contacto@innovatech.edu.pe</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6 class="fw-bold mb-3 text-white fs-7">Boletín</h6>
-                    <form class="d-flex gap-1">
-                        <input type="email" class="form-control form-control-sm bg-white border-0" placeholder="Tu correo">
-                        <button type="submit" class="btn btn-blue btn-sm px-3">Unirme</button>
-                    </form>
-                </div>
-            </div>
-            <hr class="border-secondary opacity-25">
-            <div class="text-center text-white-50 text-xs">
-                &copy; 2026 InnovaTech Instituto Superior. Todos los derechos reservados.
-            </div>
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-graduation-cap me-2 text-info"></i>EducaTech
+        </a>
+        <button class="navbar-toggler" type="button" id="menuToggleBtn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#beneficios">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-info text-white fw-bold px-3" href="#registro">Regístrate</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1 class="hero-title">Forma tu futuro con <span>educación de calidad</span></h1>
+            <p class="lead my-4 text-light">Programas técnicos superiores diseñados para impulsar tu desarrollo profesional y personal con estándares internacionales.</p>
+            <div class="d-flex gap-3">
+              <a href="#programas" class="btn btn-primary btn-lg fw-semibold">Conoce más</a>
+              <a href="#contacto" class="btn btn-outline-light btn-lg fw-semibold">Contáctanos</a>
+            </div>
+          </div>
+
+          <!-- FORMULARIO DE REGISTRO -->
+          <div id="registro" class="form-card">
+            <h3 class="mb-2">Regístrate ahora</h3>
+            <p class="text-muted small mb-4">Déjanos tus datos y recibe información sobre nuestros programas.</p>
+            
+            <form id="registrationForm" novalidate>
+              <!-- Nombre -->
+              <div class="mb-3">
+                <label for="fullName" class="form-label fw-semibold small mb-1">Nombre completo</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Ej. Juan Pérez" required>
+                <div class="invalid-feedback">Ingresa tu nombre completo.</div>
+              </div>
+
+              <!-- Correo -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold small mb-1">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="mb-3">
+                <label for="phone" class="form-label fw-semibold small mb-1">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" placeholder="987654321" pattern="[0-9]{9}" required>
+                <div class="invalid-feedback">Ingresa un número de 9 dígitos.</div>
+              </div>
+
+              <!-- Carrera -->
+              <div class="mb-3">
+                <label for="program" class="form-label fw-semibold small mb-1">Programa de interés</label>
+                <select class="form-select" id="program" required>
+                  <option value="" selected disabled>Cargando programas...</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un programa de estudio.</div>
+              </div>
+
+              <!-- Acepta Términos -->
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label small" for="terms">Acepto los términos y condiciones</label>
+                <div class="invalid-feedback">Debes aceptar los términos.</div>
+              </div>
+
+              <button type="submit" class="btn btn-success w-100 fw-bold py-2">Enviar registro</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: ¿POR QUÉ ESTUDIAR CON NOSOTROS? -->
+    <section id="beneficios" class="features-section text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-2">¿Por qué estudiar con nosotros?</h2>
+        <div class="text-center mb-5">
+          <span style="display:inline-block; width: 60px; height: 3px; background-color: var(--primary-color);"></span>
+        </div>
+        
+        <div class="features-flex">
+          <div class="feature-item">
+            <div class="feature-icon icon-blue">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h5 class="fw-semibold mt-3">Educación de calidad</h5>
+            <p class="text-muted small">Docentes especializados y programas actualizados.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon icon-green">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h5 class="fw-semibold mt-3">Oportunidades reales</h5>
+            <p class="text-muted small">Convenios con empresas y bolsa de trabajo.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon icon-yellow">
+              <i class="fa-solid fa-display"></i>
+            </div>
+            <h5 class="fw-semibold mt-3">Modalidad flexible</h5>
+            <p class="text-muted small">Estudia a tu ritmo con nuestros horarios flexibles.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon icon-purple">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h5 class="fw-semibold mt-3">Acompañamiento</h5>
+            <p class="text-muted small">Te apoyamos en cada paso de tu formación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: NUESTROS PROGRAMAS -->
+    <section id="programas" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-2">Nuestros Programas</h2>
+        <div class="text-center mb-5">
+          <span style="display:inline-block; width: 60px; height: 3px; background-color: var(--primary-color);"></span>
+        </div>
+
+        <div id="programasContainer" class="row g-4 justify-content-center">
+          <div class="text-center col-12 my-5">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Cargando carreras...</span>
+            </div>
+            <p class="text-muted mt-2">Cargando programas desde Google Sheets...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fa-solid fa-graduation-cap me-2 text-info"></i>EducaTech</h5>
+          <p class="small mt-2">Formamos profesionales técnicos líderes, capaces de transformar la industria y la sociedad.</p>
+          <div class="d-flex gap-3 fs-5 mt-3">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces rápidos</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="#inicio">Inicio</a></li>
+            <li class="mb-1"><a href="#beneficios">Nosotros</a></li>
+            <li class="mb-1"><a href="#programas">Programas</a></li>
+            <li class="mb-1"><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contáctanos</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-info"></i> Av. Central 123, Ciudad</li>
+            <li class="mb-2"><i class="fa-solid fa-phone me-2 text-info"></i> (01) 123-4567</li>
+            <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-info"></i> contacto@educatech.edu.pe</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <p class="text-center small mb-0">&copy; 2026 EducaTech Instituto Superior. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Contenedor Toast JS -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
